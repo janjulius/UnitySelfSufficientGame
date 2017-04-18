@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,13 +9,12 @@ namespace Assets.Scripts.Main.Game.Player
     public class Player
     {
         private string name;
-        private Gender gender = Gender.MALE;
+        private Gender gender;
         private Appearance appearance;
+
         
-        public Player(string name, Gender gender)
+        public Player()
         {
-            this.name = name;
-            this.gender = gender;
             this.appearance = new Appearance(0,0,0,0,0,0,0);
         }
 
