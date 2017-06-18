@@ -16,9 +16,9 @@ namespace Assets.Scripts.Main.Game.Player
         private int _playerLegs = 0;
         private int _playerFeet = 0;
 
-        public Appearance(int hair, int mustache, int shirt, int arms, int wrist, int legs, int feet)
+        public Appearance()
         {
-            
+
         }
 
         public int PlayerHair
