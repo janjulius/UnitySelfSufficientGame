@@ -10,16 +10,19 @@ public class Main : MonoBehaviour
 
     public void Start()
     {
-        CurrentPlayer = LoadPlayer();
+        Player CurrentPlayer = LoadPlayer();
 
 
         print(CurrentPlayer.Name);
-        print(CurrentPlayer.Appearance);
+        print(CurrentPlayer.Gender);
         print(Constants.NAME);
+
+        CurrentPlayer.Name = "test";
+        print(CurrentPlayer.Name);
     }
 
     public Player LoadPlayer()
     {
-        return new Player();
+        return new Player("aname", Gender.MALE);
     }
 }
